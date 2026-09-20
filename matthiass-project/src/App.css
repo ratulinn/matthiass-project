@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffffff;
+  color: #222222;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+.App, div, section {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  border-radius: 0 !important;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container, main {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #111111;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #555555;
+  margin-bottom: 15px;
+}
+
+button {
+  background-color: #e546dd;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #ca38aa;
+}
+
+.tentang-saya {
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 1px solid #eaeaea;
+}
+
+.galeri-foto {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+
+.galeri-foto img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover; 
+  border-radius: 10px; 
+  border: 3px solid #e2e8f0; 
+  padding: 5px; 
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08); 
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.galeri-foto img:hover {
+  transform: translateY(-5px);
+  border-color: #e546c3; 
+}
